@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+{% block bodyblock %}
+<!-- navbar -->
+  <nav class="one-edge-shadow sticky-top navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="/">E-Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="">Store <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <ul class=" navbar-nav my-2 my-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="">Cart
+            <span class="badge badge-info"></span>
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Orders<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Logout<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="/signup">Signup<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="">Login<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- navbar -->
+    <div class="container">
+         <div class="p-4 m-4">
+           <div class="col-lg-5 mx-auto border rounded pt-4">
+             <h3 class="alert alert-light border rounded">Create An Account</h3>
+             <form action="">
+               <!--first name-->
+             <div class="form-group" method='post'>
+               <label for="">First Name</label>
+               <input type="text" name="firstname" id="" class="form-control" placeholder="First Name" required>
+             </div>
+
+             <!--last name-->
+             <div class="form-group">
+               <label for="">Last Name</label>
+               <input type="text" name="lastname" id="" class="form-control" placeholder="Last Name" required>
+             </div>
+
+             <!--Phone-->
+             <div class="form-group">
+              <label for="">Last Name</label>
+              <input type="number" name="number" id="" class="form-control" placeholder="9755656565" required>
+            </div>
+
+
+             <!--email-->
+             <div class="form-group">
+               <label for="">Email Id</label>
+               <input type="email" name="email" id="" class="form-control" placeholder="example@gmail.com" required>
+             </div>
+
+              <!--password-->
+              <div class="form-group">
+               <label for="">Password</label>
+               <input type="password" name="password" id="" class="form-control" placeholder="************" required>
+             </div>
+             <!--submit button-->
+             <div class="form-group">
+              <input  class="btn btn-lg btn-info" type="submit" value="Create An Account" >
+            </div>
+             </form>
+           </div>
+         </div>
+       </div>
+  </body>
+</html>
+{% endblock %}
